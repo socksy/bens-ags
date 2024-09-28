@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+pgrep ags | xargs kill 2>/dev/null 1>/dev/null
+hyprctl dispatch "exec bens-ags -b hypr &"
+#nix run . -- -b hypr
